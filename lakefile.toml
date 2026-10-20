@@ -1,0 +1,15 @@
+name = "ArcturusRoadmap"
+defaultTargets = ["ArcturusRoadmap", "Completed"]
+
+[[require]]
+name = "mathlib"
+git = "https://github.com/leanprover-community/mathlib4"
+rev = "master"
+
+[[lean_lib]]
+name = "ArcturusRoadmap"
+globs = ["ArcturusRoadmap.*"]
+
+[[lean_lib]]
+name = "Completed"
+globs = ["Completed.+"]
